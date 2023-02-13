@@ -1,7 +1,6 @@
 ---@type MappingsConfig
 local M = {}
 
-
 M.format = {
   n = {
     ["<C-f>"] = { "<cmd> Neoformat <CR>" },
@@ -44,6 +43,12 @@ M.nvterm = {
       end,
       "toggle horizontal term",
     },
+  },
+}
+
+M.lazygit = {
+  n = {
+    ["gg"] = { "<cmd> :LazyGit<CR>" },
   },
 }
 
