@@ -40,8 +40,9 @@ M.nvimtree = {
     },
   },
   view = {
-   mappings = {
-    list = {
+    adaptive_size = false,
+    mappings = {
+      list = {
         { key = "u", action = "dir_up" },
         { key = "<C-o>", action = "cd" },
       },
