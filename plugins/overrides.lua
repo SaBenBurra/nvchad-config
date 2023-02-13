@@ -33,6 +33,7 @@ M.nvimtree = {
 
   renderer = {
     highlight_git = true,
+    full_name = true,
     icons = {
       show = {
         git = true,
