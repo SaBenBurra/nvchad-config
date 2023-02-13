@@ -32,6 +32,7 @@ local plugins = {
       theme = "gatekeeper",
     },
   },
+  ["kdheepak/lazygit.nvim"] = {},
 }
 
 return plugins
