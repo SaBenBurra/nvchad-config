@@ -48,7 +48,7 @@ M.nvterm = {
 
 M.lazygit = {
   n = {
-    ["gg"] = { "<cmd> :LazyGit<CR>" },
+    ["<A-g>"] = { "<cmd> :LazyGit<CR>" },
   },
 }
 
