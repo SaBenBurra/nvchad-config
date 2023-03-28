@@ -41,7 +41,7 @@ M.nvimtree = {
     },
   },
   view = {
-    adaptive_size = false,
+    adaptive_size = true,
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
