@@ -9,6 +9,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = { "*.java" },
   command = "silent !mvn compile &",
 })
+vim.keymap.set("n", "<space>cd", vim.diagnostic.open_float)
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
 --   pattern = "*",
