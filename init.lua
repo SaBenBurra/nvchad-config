@@ -12,12 +12,14 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 vim.keymap.set("n", "<space>cd", vim.diagnostic.open_float)
 
 local function lspStartOnDartFile()
-  if vim.bo.filetype == 'dart' then
-    vim.cmd(":LspStart")
+  if vim.bo.filetype == "dart" then
+    vim.cmd ":LspStart"
   end
-    vim.cmd(":stopinsert")
+  vim.cmd ":stopinsert"
 end
 vim.keymap.set("i", "<C-c>", lspStartOnDartFile)
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
 --   pattern = "*",
