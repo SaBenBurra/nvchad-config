@@ -1,4 +1,4 @@
-local overrides = require "custom.plugins.overrides"
+local overrides = require "custom.configs.overrides"
 
 local plugins = {
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
@@ -6,7 +6,7 @@ local plugins = {
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
+      require "custom.configs.lspconfig"
     end,
   },
   ["sbdchd/neoformat"] = {},
@@ -33,6 +33,11 @@ local plugins = {
     },
   },
   ["kdheepak/lazygit.nvim"] = {},
+  ["windwp/nvim-ts-autotag"] = {
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
 }
 
 return plugins

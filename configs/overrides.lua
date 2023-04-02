@@ -30,7 +30,11 @@ M.nvimtree = {
   git = {
     enable = true,
   },
-
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    show_on_open_dirs = false,
+  },
   renderer = {
     highlight_git = true,
     full_name = true,
@@ -42,6 +46,7 @@ M.nvimtree = {
   },
   view = {
     adaptive_size = true,
+    side = "right",
     mappings = {
       list = {
         { key = "u", action = "dir_up" },

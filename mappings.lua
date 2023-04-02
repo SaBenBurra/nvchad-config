@@ -52,6 +52,12 @@ M.lazygit = {
   },
 }
 
+M.telescope = {
+  n = {
+    ["<S-s>"] = { "<cmd> :Telescope find_files<CR>" },
+  },
+}
+
 -- more keybinds!
 
 return M

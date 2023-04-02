@@ -25,3 +25,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+
+
